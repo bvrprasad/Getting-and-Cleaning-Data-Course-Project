@@ -1,8 +1,9 @@
 # load the required library packages
-library(plyr)
+library(stringi)
 library(dplyr)
 library(Hmisc)
 library(reshape2)
+library(plyr)
 
 # Get date to be used as filename extension
 Date <- format(Sys.time(), "%Y%m%d%H%M%S")
@@ -71,7 +72,7 @@ colnames(DF)[563] <- "Subject"
 
 # 2.Extracts only the measurements on the mean and standard deviation for each measurement. 
 # build a vector of mean() and std() occurences from features
-col2extract <- grepl("-mean()|-std()", features)
+col2extract <- grepl("-mean\\(\\)|-std\\(\\)", features)
 DFOfMeanAndStd <- DF[,c(col2extract, TRUE, TRUE)]
 
 # 3.Uses descriptive activity names to name the activities in the data set

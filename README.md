@@ -24,6 +24,8 @@ This program does the following:
 9. using melt() and dcast the means of various measures are calculated grouped by Activity and Subject
 10. The output is stored in the file called "tidyDF.txt" in the working directory
 
+NOTE: In case of unexpected errors the programs stops in the working directory. So, you need to execute setwd("..") to be able to re-execute the script.
+
 ### Code book for tidyDF.txt
 Is a data frame containing the following:
 Paramter:
