@@ -30,12 +30,12 @@ NOTE: In case of unexpected errors the programs stops in the working directory. 
 Is a data frame containing the following:
 Paramter:
   The activity code from 1 to 6
-    1 WALKING
-    2 WALKING_UPSTAIRS
-    3 WALKING_DOWNSTAIRS
-    4 SITTING
-    5 STANDING
-    6 LAYING
+  - 1 WALKING
+  - 2 WALKING_UPSTAIRS
+  - 3 WALKING_DOWNSTAIRS
+  - 4 SITTING
+  - 5 STANDING
+  - 6 LAYING
 
 Activity.Name:
   Readable name for the activity as given in Parameter.
