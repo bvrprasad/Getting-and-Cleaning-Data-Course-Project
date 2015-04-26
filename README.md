@@ -13,16 +13,16 @@ Run this file from within R studio as follows:
 > source("run_analysis.R")
 
 This program does the following:
-1. creates a new working directory: wrk-<Date>, where Date is the FullISO date of current timestamp
-2. copies the files to work with from Samsung directory to the working directory
-3. appends the relevant training and test data files using file.append() and creates new files to work with
-4. reads the files using readLines()
-5. converts the read lines to relevant R objects
-6. merges X, y, activity and subject
-7. extracts only the mean and std measures plus the activity and subject into a new data frame
-8. merges the Activity.Name from activity_labels with the above data frame
-9. using melt() and dcast the means of various measures are calculated grouped by Activity and Subject
-10. The output is stored in the file called "tidyDF.txt" in the working directory
+- creates a new working directory: wrk-<Date>, where Date is the FullISO date of current timestamp
+- copies the files to work with from Samsung directory to the working directory
+- appends the relevant training and test data files using file.append() and creates new files to work with
+- reads the files using readLines()
+- converts the read lines to relevant R objects
+- merges X, y, activity and subject
+- extracts only the mean and std measures plus the activity and subject into a new data frame
+- merges the Activity.Name from activity_labels with the above data frame
+- using melt() and dcast the means of various measures are calculated grouped by Activity and Subject
+- The output is stored in the file called "tidyDF.txt" in the working directory
 
 NOTE: In case of unexpected errors the programs stops in the working directory. So, you need to execute setwd("..") to be able to re-execute the script.
 
